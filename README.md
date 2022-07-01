@@ -4,24 +4,24 @@ Shoppy is basically a lifestyle E-Commerce web application which retails various
 
 ###### Some salient features of this project are.....
 
-=> Using "REACT LOADING SKELETON" while loading any page for better UI.
-=> Single Page Application (SPA)
-=> Easy and fast routing and loading of products because of "REACT ROUTER DOM".
-=> CART module for adding item to the cart for later purchase.
-=> Detailed description and easy buying of products via multiple payment modes.
-=> Technologies used in this project are => "HTML, CSS, BOOTSTRAP, JAVASCRIPT (REACT)" etc.
+1. Using "REACT LOADING SKELETON" while loading any page for better UI.
+2. Single Page Application (SPA)
+3. Easy and fast routing and loading of products because of "REACT ROUTER DOM".
+4. CART module for adding item to the cart for later purchase.
+5. Detailed description and easy buying of products via multiple payment modes.
+6. Technologies used in this project are => "HTML, CSS, BOOTSTRAP, JAVASCRIPT (REACT)" etc.
 
 ###### Table of content......
 
-=> Home Page
-=> Products Page
-=> About Page
-=> SignIn/SignUp Page
-=> Cart Page
-=> Individual Product Page
-=> Payment Page
+1. Home Page
+2. Products Page
+3. About Page
+4. SignIn/SignUp Page
+5. Cart Page
+6. Individual Product Page
+7. Payment Page
 
 ###### To run the application....
 
-=> run 'npm install' (to get all required dependencies in node_modules folder)
-=> run 'npm start' (to run the application)
+1. run 'npm install' (to get all required dependencies in node_modules folder)
+2. run 'npm start' (to run the application)
