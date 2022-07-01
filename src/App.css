@@ -1,38 +1,245 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Montserrat", sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/***************************************Main*************************************/
+.main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+h1,
+h2,
+.payment h4 {
+  color: #061d31;
+  text-shadow: 2px 7px 5px rgba(0, 0, 0, 0.3),
+    0px -4px 10px rgba(255, 255, 255, 0.3);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
+.btn {
+  background: #06457c; /*rgb(59, 59, 133);*/
+  color: #fff;
+  border: none;
+  box-shadow: 0px 17px 5px -10px rgba(102, 100, 100, 0.4);
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 100ms;
+  transition: all ease-in-out 100ms;
+}
+.btn:hover {
+  box-shadow: 0px 37px 20px -20px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0px, -1px) scale(1.1);
+  transform: translate(0px, -1px) scale(1.1);
+  color: #fff;
+  background-color: #113350;
+}
+
+/*******************************Navbar********************************************/
+/* nav {
+  position: sticky;
+} */
+
+.user,
+.nav-link {
+  font-size: 1.1rem;
+  cursor: pointer;
+  -webkit-transition: all ease-in-out 100ms;
+  transition: all ease-in-out 100ms;
+}
+.user:hover,
+.nav-link:hover {
+  -webkit-transform: translate(0px, -1px) scale(1.1);
+  transform: translate(0px, -1px) scale(1);
+}
+
+.nav-link {
+  color: white !important;
+  background-color: #262626;
+}
+
+.button-list .badge {
+  font-size: 0.9rem;
+  background-color: #095fab;
+  padding: 3px 6px;
+}
+/***************************************Modal************************************/
+#modal {
+  width: 17rem;
+  background-color: #cccccc;
+  position: fixed;
+  top: 3.5rem;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 2;
+}
+
+/*************************************logo***************************************/
+.wrapper h4 {
+  color: #fff;
+  font-size: 1.7rem;
+  font-weight: 700;
+  font-family: "Josefin Sans", sans-serif;
+  background: linear-gradient(to right, #095fab 10%, #25abe8 50%, #57d75b 60%);
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 1.5s linear infinite;
+  display: inline-block;
+}
+
+@keyframes textclip {
   to {
-    transform: rotate(360deg);
+    background-position: 200% center;
   }
+}
+
+/*********************************Carousal****************************************/
+.carousel {
+  height: 33rem;
+  margin: 0 -0.74rem 3.5rem -0.74rem;
+}
+
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 8;
+}
+
+.carousel-item {
+  height: 33rem;
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 33rem;
+  border-radius: 0;
+}
+
+@media (min-width: 40em) {
+  .carousel-caption p {
+    margin-bottom: 1.26rem;
+    font-size: 1.26rem;
+    line-height: 1.4;
+  }
+}
+
+/*********************************************Card**************************************/
+.card p {
+  font-size: 1.1rem;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.card .badge span {
+  font-size: 0.9rem;
+}
+.card .badge {
+  padding: 4px 6px;
+  background-color: #226324;
+}
+
+.card {
+  background-color: #f2f8f9;
+  border-radius: 4px;
+  z-index: 0;
+  border: none;
+}
+.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: 2px 4px 8px rgba(38, 38, 38, 0.2);
+  border: 1px solid #cccccc;
+  background-color: rgb(223, 222, 222);
+}
+.card:hover:before {
+  transform: scale(2.15);
+}
+
+/****************************SingleProduct***************************/
+.row-list {
+  border-bottom: 1px solid rgb(165, 163, 163);
+}
+
+.img-large img {
+  min-height: 400px;
+  width: 80%;
+  height: 460px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img {
+  border-radius: 0.3em;
+  object-fit: cover;
+}
+
+/*************************************CartItem********************************/
+img {
+  width: 170px;
+  height: 160px;
+  object-fit: cover;
+}
+
+/**************************************NewsLetter***********************************/
+.letter_comp {
+  border-radius: 0;
+}
+
+/***************************************Login form**************************************/
+.login-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+.form-signin {
+  width: 100%;
+  max-width: 360px;
+  padding: 15px;
+  margin: auto;
+}
+
+.form-signin .checkbox {
+  font-weight: 400;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="email"] {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.rem {
+  margin-left: -28px;
+}
+
+.para-text {
+  font-size: 1rem;
+}
+
+/*******************************paymentpagecart***********************************/
+.payment_cart-list img {
+  width: 80px;
+  height: 70px;
+}
+.payment label {
+  font-weight: 600;
 }
